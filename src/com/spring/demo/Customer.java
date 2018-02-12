@@ -6,13 +6,19 @@ public class Customer {
 	private String customerName; 
 	private Address address;
 	
+		
+	public Customer(Address address) {
+		super();
+		this.address = address;
+	}
+
 	public Address getAddress() {
 		return address;
 	}
 
-	public void setAddress(Address address) {
+	/*public void setAddress(Address address) {
 		this.address = address;
-	}
+	}*/
 
 	public int getCustID() {
 		return custID;
