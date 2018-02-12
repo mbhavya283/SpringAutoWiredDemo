@@ -28,7 +28,6 @@ public class Customer {
 
 	public void setCustomerName(String customerName) {
 		this.customerName = customerName;
-		System.out.println("invoked via byName");
 	}
 	
 	/*public Customer(int custID, String customerName) {

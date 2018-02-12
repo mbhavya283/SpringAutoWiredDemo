@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans 
        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
        
-	<bean id = "customer"  class ="com.spring.demo.Customer" autowire="byName"> 
+	<bean id = "customer"  class ="com.spring.demo.Customer" autowire="byType"> 
 		<property name="custID" value="100"> </property>
 		<property name="customerName" value="Bhavya"> </property>
 	
@@ -12,7 +12,7 @@
 		<constructor-arg name = "customerName" value = "Bhavya" ></constructor-arg> -->
 	</bean>
 	
-	<bean id ="address" class="com.spring.demo.Address">
+	<bean id ="address1" class="com.spring.demo.Address">
 		<property name="addressLine1" value="1 saint francis pl"></property>
 		<property name="addressLine2" value="apt#1401"></property>	
 		<property name="city" value="San Francisco"></property>	
