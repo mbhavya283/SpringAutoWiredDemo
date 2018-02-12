@@ -4,11 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans 
        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
        
-	<bean id = "customer"  class ="com.spring.demo.Customer"> 
+	<bean id = "customer"  class ="com.spring.demo.Customer" autowire="byName"> 
 		<property name="custID" value="100"> </property>
 		<property name="customerName" value="Bhavya"> </property>
-		<property name="address" ref ="address"> </property>
-		
+	
 		<!--<constructor-arg name = "custID" value = "2000" type = "int"></constructor-arg>
 		<constructor-arg name = "customerName" value = "Bhavya" ></constructor-arg> -->
 	</bean>
