@@ -10,15 +10,18 @@ public class Customer {
 	public Customer(Address address) {
 		super();
 		this.address = address;
+		System.out.println("Invoked via constructor");
 	}
 
 	public Address getAddress() {
 		return address;
 	}
 
-	/*public void setAddress(Address address) {
+	public void setAddress(Address address) {
 		this.address = address;
-	}*/
+		System.out.println("Invoked via Setter");
+
+	}
 
 	public int getCustID() {
 		return custID;
@@ -36,12 +39,4 @@ public class Customer {
 		this.customerName = customerName;
 	}
 	
-	/*public Customer(int custID, String customerName) {
-		super();
-		this.custID = custID;
-		this.customerName = customerName;
-	}*/
-
-	public Customer() {
-	}
 }
